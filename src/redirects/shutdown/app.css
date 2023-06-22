@@ -13,14 +13,23 @@
 html{
     font-family: Roboto;
 }
-body {
+body 
+{
+    background-image: url('../shutdown/BG.gif');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+/*{
     overflow: hidden;
     background-color:#caf0f8;
     height: 95vh;
     background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
     background-size: 400% 400%;
     animation: background 7s linear infinite;
-}
+}*/
 a{
     text-decoration: none;
     padding: 10px;
