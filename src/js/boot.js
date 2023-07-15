@@ -106,7 +106,7 @@ function passwordPhase() {
         // check if user enters correct password
         passwordField.addEventListener("keyup", event => {
             if (passwordField.value == "0000") {
-                console.log("login was successful");
+                console.log("Login was successful");
                 passwordDialog.remove();
                 clearInterval(timer)
                 lockScreen.remove();
