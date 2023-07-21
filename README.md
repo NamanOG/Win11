@@ -8,8 +8,6 @@
 #
 <h1>Windows 11 live - https://namanog.github.io/Win11/<br></h1>
 
-<img width="300px" height="300px" src="https://www.windowslatest.com/wp-content/uploads/2021/07/Start-menu-animation.gif">
-
 ## <u>Disclaimer:</u>
 All Copyrights to Microsoft.<br>
 I am not affiliated to Microsoft.<br>
