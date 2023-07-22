@@ -12,7 +12,7 @@ const firstBoot = getCookie("firstBoot") === "0" ? false : true;
 // accessing required elements
 let powerOnBox = document.querySelector(".powerOnBox");
 let powerOnBtn = document.getElementById("powerOnBtn");
-// turning off the boot process for development purpose
+// turning off the booting screen
 function skipBoot() {
     powerOnBox.remove();
     document.querySelector(".desktop").style.display = "block";
@@ -34,10 +34,10 @@ else {
 }
 
 function boot() {
-    // Boot the os after the power button has been clicked
+    // Boot button for os
     powerOnBox.remove();
     document.querySelector(".boot").style.display = "flex";
-    // display .boot box for 3 seconds and play the video of starting windows
+    // Start of windows screen after boot
     setTimeout(() => {
         document.querySelector(".boot").remove();
         // play the video
@@ -60,13 +60,13 @@ function boot() {
 }
 // making  the date and time in the  lock Screen dynamic
 let days = {
-    0: "Sunday",
-    1: "Monday",
-    2: "Tuesday",
-    3: "Wednesday",
-    4: "Thursday",
-    5: "Friday",
-    6: "Saturday",
+    0: "Monday",
+    1: "Tuesday",
+    2: "Wednesday",
+    3: "Thursday",
+    4: "Friday",
+    5: "Saturday",
+    6: "Sunday",
     getDayName(dayNumber) {
         return this[dayNumber];
     }
@@ -79,13 +79,13 @@ var timer = setInterval(() => {
     document.querySelector(".time").innerText = timeString;
     // making dynamic date
     let dayName = days.getDayName(date.getDay());
-    let month = date.toLocaleString('en-us', { month: 'long' }); /* June */
+    let month = date.toLocaleString('en-us', { month: 'long' });
     let year = date.getFullYear();
     let dateString = dayName + ", " + month.padStart(2,0) + ", " + year.padStart(4,0);
     document.querySelector(".date").innerText = dateString;
 }, 1000);
 
-// if the user clicks or press any key on the keyboard the lock screen should disappear and passwordScreen should appear
+// Password screen appears after clicking any button
 function passwordPhase() {
     let lockScreen = document.getElementById("lockScreen");
     let timeBox = document.getElementById("timeBox");
@@ -127,12 +127,11 @@ function passwordPhase() {
                 if (getCookie("cookiesAccepted") == "") {
                     notify("src/icons/settings.svg", "Settings", "Windows 11 uses Cookies", "To improve user experience this Windows 11 uses cookies", "Accept", `setCookie('cookiesAccepted','1');notificationClose('#n${nId}')`);
                 }
-                // alert("apply a loader here..if you like..");
             }
         })
         passwordField.addEventListener("keypress", event => {
             if (event.key == "Enter") {
-                if (passwordField.value != "12345") {
+                if (passwordField.value != "0000") {
                     console.log("login was not successful");
                     alert("Incorrect password");
                     // style this.....
