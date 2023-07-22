@@ -19,7 +19,7 @@
     },
     "vscode": {
         "name": "Visual Studio Code",
-        "src": "src/apps/vscode.html",
+        "src": "https://vscode.dev/",
         "icon": "src/icons/vscode.svg"
     },
     "notepad": {
@@ -46,5 +46,10 @@
         "name": "Settings",
         "src": "https://namanog.github.io/win11-settings/",
         "icon": "src/icons/settings.svg"
+    },
+    "Linkedin": {
+        "name": "Linkedin",
+        "src": "https://www.linkedin.com/in/namanog/",
+        "icon": "src/icons/linkedIn.svg"
     }
 }

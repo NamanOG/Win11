@@ -74,7 +74,7 @@ fetch("src/apps/apps.json")
 
 let allSchemes = ["min", "max", "cross"];
 
-/*
+
 let allPrograms = ["winver", "powershell", "msedge", "vscode"];
 let allProgramsTitleName = ["About Windows", "Windows PowerShell", "Microsoft Edge", "Visual Studio Code"];
 let allProgramsBody = ["src/apps/winver.html", "src/apps/powershell.html", "src/apps/edge.html", "src/apps/vscode.html"]
@@ -86,7 +86,7 @@ let allProgramsIconsSchemes = [
     allSchemes,
     allSchemes
 ];
-*/
+
 
 function searchPrograms(givenProgram) {
     if (apps.hasOwnProperty(givenProgram)) {
