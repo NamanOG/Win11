@@ -1,9 +1,9 @@
-//getting cookies
+//cookies
 function getCookie(name) {
     var result = document.cookie.match("(^|[^;]+)\\s*" + name + "\\s*=\\s*([^;]+)")
     return result ? result.pop() : ""
 }
-//setting cookies
+//setting up cookies
 function setCookie(name, value) {
     document.cookie = name + "=" + value + "; expires=" + new Date(2147483647 * 1000).toUTCString();
 }
@@ -12,7 +12,7 @@ const firstBoot = getCookie("firstBoot") === "0" ? false : true;
 // accessing required elements
 let powerOnBox = document.querySelector(".powerOnBox");
 let powerOnBtn = document.getElementById("powerOnBtn");
-// turning off the booting screen
+// turning off the boot screen
 function skipBoot() {
     powerOnBox.remove();
     document.querySelector(".desktop").style.display = "block";
@@ -34,13 +34,13 @@ else {
 }
 
 function boot() {
-    // Boot button for os
+    // Boot button for OS
     powerOnBox.remove();
     document.querySelector(".boot").style.display = "flex";
     // Start of windows screen after boot
     setTimeout(() => {
         document.querySelector(".boot").remove();
-        // play the video
+        // play the Animation video
         document.querySelector(".boot-animation").style.display = "flex";
         document.getElementById("startupAudio").play();
         // remove the video div after the video has been played
