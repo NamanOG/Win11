@@ -69,7 +69,7 @@ body {
 .right>img:hover,
 .start-icons figure:focus,
 .start-icons figure:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(45, 255, 192);
     border-radius: 5px;
 }
 
@@ -78,7 +78,7 @@ body {
     z-index: 1000;
     width: -webkit-max-content;
     width: max-content;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.473);
     border: 1px solid rgba(255, 255, 255, 0.125);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -316,7 +316,7 @@ figure {
 /* styling power on box */
 
 .powerOnBox {
-    background: #1b1a23;
+    background: #2c2a3d;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -375,7 +375,7 @@ figure {
 }
 
 .power-switch .button .power-off .a {
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 .power-switch .button .power-off .b, .power-switch .button .power-on .b {
@@ -385,7 +385,7 @@ figure {
 }
 
 .power-switch .button .power-off .b {
-    opacity: 0.2;
+    opacity: 0.1;
     stroke-dashoffset: 40;
 }
 
@@ -418,14 +418,14 @@ figure {
 }
 
 .power-switch input:checked+.button .power-off, .power-switch input:checked+.button .power-on {
-    -webkit-animation: click-animation 0.3s ease forwards;
-    animation: click-animation 0.3s ease forwards;
+    -webkit-animation: click-animation 0.5s ease forwards;
+    animation: click-animation 0.5s ease forwards;
     transform: scale(1);
 }
 
 .power-switch input:checked+.button .power-off .a, .power-switch input:checked+.button .power-on .a {
-    -webkit-animation: line-animation 0.8s ease-in forwards;
-    animation: line-animation 0.8s ease-in forwards;
+    -webkit-animation: line-animation 1.0s ease-in forwards;
+    animation: line-animation 1.0s ease-in forwards;
 }
 
 .power-switch input:checked+.button .power-off .b {
@@ -462,7 +462,7 @@ figure {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background: #fff url("../wallpaper/img100.webp") center center/cover no-repeat;
+    background: #fff url("../wallpaper/img184.webp") center center/cover no-repeat;
     position: relative;
     display: none;
 }

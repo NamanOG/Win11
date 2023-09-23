@@ -8,7 +8,7 @@
     <meta name="description" content="A simple Windows 11 experience within browser.">
     <link rel="shortcut icon" href="src/icons/favicon.png" sizes="152x152">
     <link rel="apple-touch-icon" href="src/icons/favicon.png">
-    <meta name="theme-color" content="#000"/>
+    <meta name="theme-color" content="#000" />
     <link rel="manifest" href="manifest.json" />
     <meta name="author" content="Naman">
     <meta name="robots" content="index, follow">
@@ -16,9 +16,10 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Windows 11 by Naman">
     <meta property="og:url" content="/">
-    <meta property="og:image" content="https://repository-images.githubusercontent.com/383476453/3a749fd6-31c2-41ef-99ab-3c2d8405311e">
+    <meta property="og:image"
+        content="https://repository-images.githubusercontent.com/383476453/3a749fd6-31c2-41ef-99ab-3c2d8405311e">
     <meta property="og:description" content="A simple Windows 11 experience within browser.">
-    <link rel="preload" href="src/wallpaper/img100.webp" as="image">
+    <link rel="preload" href="src/wallpaper/img184.webp" as="image">
     <link rel="preload" href="src/wallpaper/img18.webp" as="image">
     <script>
         if ('serviceWorker' in navigator) {
@@ -51,7 +52,7 @@
         .boot-animation {
             display: none;
             filter: brightness(1.34) contrast(1.06);
-            background-color: white;
+            background-color: rgb(41, 194, 255);
         }
     </style>
     <link rel="stylesheet" href="src/css/style.css">
@@ -71,11 +72,11 @@
     <!-- password dialog -->
     <div class="passwordDialog">
         <div class="userProfile"><img src="src/icons/user.svg" alt="User Profile"></div>
-        <div class="username">User Name</div>
+        <div class="username">Username</div>
         <div class="sign-in-content">
             <div class="sign-in-method active" id="method_1" data-tab-info>
                 <input type="password" placeholder="PIN" id="passwordField">
-                <span class="hint">Your password is: 0000                                                                                      </span>
+                <span class="hint">The Pin is : 0000 </span>
                 <div class="forgotOption">I forgot my pin</div>
             </div>
             <div class="sign-in-method" id="method_2" data-tab-info>
@@ -127,7 +128,7 @@
                 </svg>
             </div>
         </div>
-        <span style="color: rgb(199, 251, 255)">Click to Expierence Windows 11</span>
+        <span style="color: rgb(199, 251, 255)">Click the Button to Activate Windows 11 Expierence !</span>
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 150 150">
                 <path d="M75 34v24" />
@@ -162,25 +163,24 @@
         <iframe class="frameresizableWindow" src="https://www.bing.com/"></iframe>
     </div>
     -->
-    <!-- EDGE BROWSER -->
     <div class="desktop">
         <div class="desktopIcons">
-            <!-- desktop icon 1 -->
+            <!--Icon 1-->
             <figure id="deskcomp">
                 <img src="src/icons/Computer.png" alt="Windows 11 This PC icon">
                 <figcaption class="iconName">This PC</figcaption>
             </figure>
-            <!-- desktop icon 2 -->
-            <figure id="deskvscode" onclick="executeProgram('vscode')">
-                <img src="src/icons/vscode.png" alt="Visual Studio Code Icon">
-                <figcaption class="iconName">Visual Studio Code</figcaption>
-            </figure>
-            <!-- desktop icon 3 -->
+            <!-- Icon 2 -->
             <figure id="deskbrowser" onclick="executeProgram('msedge')">
                 <!-- <button onclick = "OCBROWSER()" id = "browserbtn" class = "Iconshell"> -->
                 <img src="src/icons/edge.svg" alt="Microsoft Edge Icon">
                 <figcaption class="iconName">Microsoft Edge</figcaption>
                 <!-- </button> -->
+            </figure>
+            <!-- Icon 3 -->
+            <figure id="deskvscode" onclick="executeProgram('vscode')">
+                <img src="src/icons/vscode.png" alt="Visual Studio Code Icon">
+                <figcaption class="iconName">Visual Studio Code</figcaption>
             </figure>
         </div>
     </div>
@@ -194,7 +194,7 @@
         <div class="pinned">
             <div class="start-top-elements">
                 <span>Pinned</span>
-                <button class="openAll" id="allapps">All apps <img src="src/icons/right.svg" alt="open all apps"
+                <button class="openAll" id="allapps">All apps<img src="src/icons/right.svg" alt="open all apps"
                         class="smallRight"></button>
             </div>
             <div class="start-icons">
@@ -226,13 +226,13 @@
                     <img src="src/icons/store.png" alt="Windows 11 Microsoft Store icon">
                     <figcaption>MS Store</figcaption>
                 </figure>
+                <figure id="startMovies">
+                    <img src="src/icons/movies.svg" alt="Windows Movies & TV icon">
+                    <figcaption>Movies & TV</figcaption>
+                </figure>
                 <figure id="startPhotos" onclick="executeProgram('photos')">
                     <img src="src/icons/photos.svg" alt="Windows Photos icon">
                     <figcaption>Photos</figcaption>
-                </figure>
-                <figure id="startOneNote" onclick="executeProgram('onenote')">
-                    <img src="src/icons/oneNote.svg" alt="OneNote icon">
-                    <figcaption>OneNote</figcaption>
                 </figure>
                 <figure id="startYourPhone">
                     <img src="src/icons/yourPhone.svg" alt="Windows Your Phone icon">
@@ -242,6 +242,10 @@
                     <img src="src/icons/toDo.svg" alt="Microsoft To DO icon">
                     <figcaption>To Do</figcaption>
                 </figure>
+                <figure id="startSnip">
+                    <img src="src/icons/snipSketch.svg" alt="Windows Snipping Tool icon">
+                    <figcaption>Snipping Tool</figcaption>
+                </figure>
                 <figure id="startLinkedIn" onclick="executeProgram('Linkedin')">
                     <img src="src/icons/linkedIn.svg" alt="LinkedIn icon">
                     <figcaption>LinkedIn</figcaption>
@@ -250,21 +254,17 @@
                     <img src="src/icons/settings.svg" alt="Windows 11 Settings icon">
                     <figcaption>Settings</figcaption>
                 </figure>
-                <figure id="startCalci"  onclick="executeProgram('calculator')">
+                <figure id="startCalci" onclick="executeProgram('calculator')">
                     <img src="src/icons/calculator.svg" alt="Windows Calculator icon">
                     <figcaption>Calculator</figcaption>
+                </figure>
+                <figure id="startOneNote" onclick="executeProgram('onenote')">
+                    <img src="src/icons/oneNote.svg" alt="OneNote icon">
+                    <figcaption>OneNote</figcaption>
                 </figure>
                 <figure id="startWhiteboard">
                     <img src="src/icons/whiteboard.png" alt="Windows Whiteboard icon">
                     <figcaption>Whiteboard</figcaption>
-                </figure>
-                <figure id="startSnip">
-                    <img src="src/icons/snipSketch.svg" alt="Windows Snipping Tool icon">
-                    <figcaption>Snipping Tool</figcaption>
-                </figure>
-                <figure id="startMovies">
-                    <img src="src/icons/movies.svg" alt="Windows Movies & TV icon">
-                    <figcaption>Movies & TV</figcaption>
                 </figure>
                 <figure id="startClock">
                     <img src="src/icons/clock.svg" alt="Windows Clock icon">
@@ -275,7 +275,8 @@
         <div class="recommended">
             <div class="start-top-elements">
                 <span>Recommended</span>
-                <button class="openAll">More<img src="src/icons/right.svg" alt="open all apps"class="smallRight"></button>
+                <button class="openAll">More<img src="src/icons/right.svg" alt="open all apps"
+                        class="smallRight"></button>
             </div>
         </div>
         <div class="others">
@@ -283,27 +284,27 @@
                 <img src="src/icons/user.png" alt="Windows 11 User icon">
                 <span>Naman</span>
             </div>
-            <a href="src/redirects/shutdown/logoff.html"><img src="src/icons/shutdown.svg" alt="Windows 11 Shutdown icon" id="shutdown"></a>
+            <a href="src/redirects/shutdown/logoff.html"><img src="src/icons/shutdown.svg"
+                    alt="Windows 11 Shutdown icon" id="shutdown"></a>
         </div>
     </div>
     <div class="taskbar">
         <div class="center">
             <img src="src/icons/startButton.png" alt="Windows 11 start icon" id="starticon">
             <img src="src/icons/search.svg" alt="Windows 11 Search icon" id="searchIcon">
-            <img src="src/icons/taskView.svg" alt="Windows 11 Task View icon" id="taskviewIcon">
             <img src="src/icons/widgets.svg" alt="Windows 11 widgets" id="widgetsIcon">
             <img src="src/icons/teams.svg" alt="Microsoft Teams icon" id="teamsIcon">
             <img src="src/icons/fileExplorer.png" alt="Windows 11 File Explorer icon" id="filesIcon">
-            <img src="src/icons/edge.svg" alt="Windows 11 Edge icon" onclick="executeProgram('msedge')" id="edgeIcon">
             <img src="src/icons/store.png" alt="Windows 11 Store icon" id="storeIcon">
+            <img src="src/icons/edge.svg" alt="Windows 11 Edge icon" onclick="executeProgram('msedge')" id="edgeIcon">
         </div>
         <div class="right">
             <img src="src/icons/up.svg" alt="Up arrow">
             <img src="src/icons/keyboard.svg" alt="Keyboard Meta Keys" id="keyboardOpener">
             <div class="action-center-button" onclick="document.getElementById('acCheck').click()">
                 <input type="checkbox" name="acCheck" id="acCheck" style="display: none;" checked>
-                <img src="src/icons/wifi.svg" alt="WiFi" id="wifi">
                 <img src="src/icons/speaker.svg" alt="Speaker">
+                <img src="src/icons/wifi.svg" alt="WiFi" id="wifi">
                 <img src="src/icons/batteryFull.svg" alt="Battery Full">
             </div>
             <div class="time-date">
@@ -313,7 +314,7 @@
             </div>
         </div>
     </div>
-<!--Accessbility tools-->
+    <!--Accessbility tools-->
     <link rel="stylesheet" href="src/css/actionCenter.css">
     <div class="action-center">
         <div class="buttons">
@@ -325,20 +326,16 @@
                 <figcaption>WiFi</figcaption>
             </figure>
             <figure>
-                <img src="src//icons/bluetooth.svg" alt="Bluetooth Icon">
-                <figcaption>Bluetooth</figcaption>
-            </figure>
-            <figure>
                 <img src="src/icons/airplane.svg" alt="Airplane Icon">
                 <figcaption>Airplane Mode</figcaption>
             </figure>
             <figure>
-                <img src="src/icons/batterySaver.svg" alt="Battery Saver Icon">
-                <figcaption>Battery Saver</figcaption>
+                <img src="src//icons/bluetooth.svg" alt="Bluetooth Icon">
+                <figcaption>Bluetooth</figcaption>
             </figure>
             <figure>
-                <img src="src/icons/focusAssist.svg" alt="Focus Assist Icon">
-                <figcaption>Focus Assist</figcaption>
+                <img src="src/icons/batterySaver.svg" alt="Battery Saver Icon">
+                <figcaption>Battery Saver</figcaption>
             </figure>
             <figure>
                 <div>
@@ -381,26 +378,32 @@
         </div>
     </div>
     <div id="context-menu">
-        <div class="item"><img src="src/icons/view.svg" alt="View">View<img src="src/icons/right.svg" alt="Right arrow"></div>
-        <div class="item"><img src="src/icons/sort.svg" alt="Sort">Sort by<img src="src/icons/right.svg" alt="Right arrow"></div>
+        <div class="item"><img src="src/icons/view.svg" alt="View">View<img src="src/icons/right.svg" alt="Right arrow">
+        </div>
+        <div class="item"><img src="src/icons/sort.svg" alt="Sort">Sort by<img src="src/icons/right.svg"
+                alt="Right arrow"></div>
         <hr>
         <div class="item">Refresh</div>
-        <div class="item"><img src="src/icons/new.svg" alt="New">New item<img src="src/icons/right.svg" alt="Right arrow"></div>
+        <div class="item"><img src="src/icons/new.svg" alt="New">New item<img src="src/icons/right.svg"
+                alt="Right arrow"></div>
         <hr>
         <div class="item"><img src="src/icons/display.svg" alt="Display">Display settings</div>
         <div class="item"><img src="src/icons/personalize.png" alt="Personalize">Personalize</div>
         <hr>
         <div class="item"><img src="src/icons/terminal.png" alt="Terminal">Open in Windows Terminal</div>
         <hr>
-        <div class="item"><img src="src/icons/more.svg" alt="More">Show more options<img src="src/icons/right.svg" alt="Right arrow"></div>
+        <div class="item"><img src="src/icons/more.svg" alt="More">Show more options<img src="src/icons/right.svg"
+                alt="Right arrow"></div>
     </div>
     <!-- Run Dialog -->
     <div class="runDialog window">
         <div class="runHeader"> <img src="src/icons/runicon.png" alt="run icon" class="runIconSmall"> <span>Run</span>
-            <div class="optionsWrapper"><img src="src/icons/cross.svg" alt="close" class="windowOptions windowCrosser"></div>
+            <div class="optionsWrapper"><img src="src/icons/cross.svg" alt="close" class="windowOptions windowCrosser">
+            </div>
         </div>
         <div class="runBody">
-            <div class="runBodyMessage"><img src="src/icons/runicon.png" alt="run Icon" id="runIconBody"><span>Type the name of the program, folder, document or internet resources, and windows will open it for you.</span></div>
+            <div class="runBodyMessage"><img src="src/icons/runicon.png" alt="run Icon" id="runIconBody"><span>Type the
+                    name of program, document or Folder it will open.</span></div>
             <label for="runInputField">Open: </label><input type="text" id="runInputField" autocomplete="off">
         </div>
         <div class="runFooter">
@@ -421,8 +424,9 @@
         <div class="keys" data-value="Ctrl" id="ctrlKey">Ctrl</div>
     </div>
     <div class="imagesToBePreloaded" style="display: none;"></div>
-<!-- Script of end program After boot -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Script of end program After boot -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="src/js/jquery-ui.min.js"></script>
     <script src="src/js/iframes-apps.js"></script>
     <script src="src/js/boot.js"></script>
@@ -435,7 +439,7 @@
     <script src="src/js/notification.js"></script>
     <link rel="stylesheet" type="text/css" href="src/css/webapps.css">
     <link rel="stylesheet" type="text/css" href="src/css/animations.css">
-    <script src="src/js/tutorial.js"></script>  
+    <script src="src/js/tutorial.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
