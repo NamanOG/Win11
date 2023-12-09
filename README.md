@@ -53,7 +53,7 @@ Explore the website to interact with the Windows 11-like user interface. Open th
 
 Contributions to the Windows 11 Replica project are welcome! If you have ideas, suggestions, or would like to contribute code improvements, please feel free to:
 
-1. Fork the repository on [GitHub](https://github.com/namanog/Win11).
+1. Fork the repository on [GitHub](https://github.com/NamanOG/Win11).
 2. Make your enhancements or additions.
 3. Submit a pull request.
 

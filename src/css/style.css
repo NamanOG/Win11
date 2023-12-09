@@ -10,6 +10,7 @@
 body {
     width: 100vw;
     height: 100vh;
+    cursor: none;
     /* background: #fff url(wallpaper/img18.webp) center center/cover no-repeat; */
     background: none;
     display: grid;
